@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#create{
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+}
+
+#modal{
+  position: fixed;
+  bottom: 120px;
+  right: 20px; 
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  display: none;
+}
+
+#cards{
+  width: 100%;
+  display: inline-block;
+  /* float: left; */
+}
+
+#carde{
+  width: 100%;
+  float: left;
+  display: inline-block;
+  margin: 4px;
+}

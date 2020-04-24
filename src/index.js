@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import Dialog from './dialog'
+import Appbar from './appbar'
+import Create from './create'
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Appbar total="20" />
+    <Dialog />
   </React.StrictMode>,
   document.getElementById('root')
 );
