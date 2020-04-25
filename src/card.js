@@ -6,6 +6,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { MdShoppingCart } from 'react-icons/md';
+import { GiMilkCarton } from 'react-icons/gi'
+import { FaMobileAlt } from 'react-icons/fa'
 
 const useStyles = makeStyles({
   root: {
@@ -18,9 +21,8 @@ const useStyles = makeStyles({
 
 export default function MediaCard(props) {
   const classes = useStyles();
-
   return (
-    <Card className={classes.root} id="carde">
+    <Card className={classes.root} id="carde" style={{backgroundColor:"#80ffaa"}}>
       <CardActionArea>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -29,16 +31,14 @@ export default function MediaCard(props) {
           <Typography gutterBottom variant="h5" component="h2">
             Expense Amount: {props.amount}
           </Typography>
+          <Typography gutterBottom variant="h5" component="h2">
+            Expense Type: {props.type}
+          </Typography>
+          <Typography gutterBottom variant="h5" component="h2"> 
+            Date: {props.date}
+          </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
     </Card>
   );
 }

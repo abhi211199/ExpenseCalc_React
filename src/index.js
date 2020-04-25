@@ -10,7 +10,7 @@ import Create from './create'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Appbar total="20" />
+    {/* <Appbar /> */}
     <Dialog />
   </React.StrictMode>,
   document.getElementById('root')

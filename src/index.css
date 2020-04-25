@@ -29,9 +29,10 @@ code {
 }
 
 #cards{
-  width: 100%;
+  /* width: 100%; */
   display: inline-block;
   /* float: left; */
+  margin-top: 70px;
 }
 
 #carde{
